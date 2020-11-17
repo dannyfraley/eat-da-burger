@@ -6,7 +6,8 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#burger-field").val().trim(),
+        burger_name: $("#burger-field").val().trim(),
+        devoured: 0
       };
   
       // Send the POST request.
@@ -22,11 +23,11 @@ $(function() {
       );
     });
   
-    $(".devour-burger").on("click", function(event) {
+    $(".change-devour").on("click", function(event) {
       var id = $(this).data("id");
     
       var devouredBurger = {
-          isdevoured: $(this).data("devoured")
+          devoured: 1
       }
       // Send the DELETE request.
       $.ajax("/api/burgers/" + id, {

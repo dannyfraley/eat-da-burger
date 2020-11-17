@@ -7,33 +7,33 @@ var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-    burger.all(function(data) {
-      var hbsObject = {
-        cats: data
+    burger.selectAll(function(data) {
+      var burgerObject = {
+        burgers: data
       };
-      console.log(hbsObject);
-      res.render("index", hbsObject);
+      console.log(burgerObject);
+      res.render("index", burgerObject);
     });
   });
   
-  router.post("/api/cats", function(req, res) {
-    burger.create([
-      "name", "sleepy"
+  router.post("/api/burgers", function(req, res) {
+    burger.insertOne([
+      "burger_name", "devoured"
     ], [
-      req.body.name, req.body.sleepy
+      req.body.burger_name, req.body.devoured
     ], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });
   });
   
-  router.put("/api/cats/:id", function(req, res) {
+  router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     console.log("condition", condition);
   
-    burger.update({
-      sleepy: req.body.sleepy
+    burger.updateOne({
+      devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {
         // If no rows were changed, then the ID must not exist, so 404
@@ -44,7 +44,7 @@ router.get("/", function(req, res) {
     });
   });
   
-  router.delete("/api/cats/:id", function(req, res) {
+  router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     burger.delete(condition, function(result) {
