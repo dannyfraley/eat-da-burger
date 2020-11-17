@@ -1,34 +1,56 @@
-<h1>Burgers!</h1>
-
-<h2>Burgers that are not devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-burger">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="burger-field" name="name">
+<div class="container">
+  <div class="row">
+    <div class="col-12 main text-center burger-logo">
+      <img src="/assets/images/EAT-DA-BURGER-logo-500.png" class="animate__animated animate__flash">
+    </div>
   </div>
 
- 
+  <div class="row">
+    
+    <div class="col-sm-12 text-center addABurger">
+      
+      <h2>ADD A NEW BURGER TO EAT:</h2>
+      
+      <form class="create-burger">
 
-  <button type="submit">Add Burger</button>
-</form>
+        <div class="form-group">
+          <label for="ca"></label>
+          <input type="text" id="burger-field" name="name" placeholder="New Burger Name"> <button class="glow-on-hover" type="submit">ADD BURGER!</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <div class="row input-row">
+
+    <div class="col-sm-6 text-center b2bd">
+      <h2>BURGERS I GOTTA EAT:</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers devoured=false}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-sm-6 text-center bthbd">
+      <h2>BURGERS I DEVOURED:</h2>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers devoured=true}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+  </div>
+
+  
+
+</div>

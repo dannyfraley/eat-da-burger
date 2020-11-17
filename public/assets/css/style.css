@@ -1,20 +1,118 @@
+body {
+  background-image: url('/assets/images/black-brick.jpg');
+  background-size: 100%;
+  padding-bottom: 100px;
+  font-family: 'Permanent Marker', cursive;
+}
+.burger-logo{
+  position: fixed;
+  vertical-align: middle;
+  margin: auto;
+  height: auto;
+}
+
+.glow-on-hover {
+  width: 120px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #e02764;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #e02764, #4461fd, #e02764, #4461fd, #e02764, #4461fd);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-color: #e02764;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  background-color: #e02764;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e02764;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+ul{
+    list-style-type: none;
+}
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+/* border-radius: 15px; */
+padding: 10px;
+margin: auto;
+color: white;
+width: 400px;
+height: 50px;
+text-align: left;
+font-family: 'Bebas Neue', cursive;
+font-size: 30px;
+
+
+}
+
+.b2bd, .bthbd {
+  color: white;
+  text-align: left;
+}
+
+.addABurger {
+  color: white;
+}
+
+.main{
+    margin-top: 20px;
+}
+
+.input-row{
+    margin-top: 2rem;
+}
+h2 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.form-group {
+  padding-bottom: 60px;
+  font-family: 'Bebas Neue', cursive;
+font-size: 25px;
+}
