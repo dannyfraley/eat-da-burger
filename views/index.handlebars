@@ -27,9 +27,9 @@
 
   <div class="row input-row">
 
-    <div class="col-sm-6 text-center b2bd">
-      <h2>BURGERS I GOTTA EAT:</h2>
-      <ul>
+    <div class="col-sm-6 b2bd">
+      <h2 class="burgersIGottaEat">BURGERS I GOTTA EAT:</h2>
+      <ul class="uneatenBurgers">
         {{#each burgers}}
         {{#unless devoured}}
         {{> burgers devoured=false}}
@@ -38,9 +38,9 @@
       </ul>
     </div>
 
-    <div class="col-sm-6 text-center bthbd">
-      <h2>BURGERS I DEVOURED:</h2>
-      <ul>
+    <div class="col-sm-6 bthbd">
+      <h2 class="burgersIDevoured">BURGERS I DEVOURED:</h2>
+      <ul class="eatenBurgers">
         {{#each burgers}}
         {{#if devoured}}
         {{> burgers devoured=true}}

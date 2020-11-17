@@ -77,19 +77,27 @@ ul{
     list-style-type: none;
 }
 
-li {
-/* border-radius: 15px; */
-padding: 10px;
+.uneatenBurgers {
+padding-left: 20px;
 margin: auto;
 color: white;
-width: 400px;
+width: 500px;
 height: 50px;
 text-align: left;
 font-family: 'Bebas Neue', cursive;
 font-size: 30px;
-
-
 }
+
+.eatenBurgers {
+  padding-right: 80px;
+  margin: auto;
+  color: white;
+  width: 500px;
+  height: 50px;
+  text-align: right;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  }
 
 .b2bd, .bthbd {
   color: white;
@@ -111,6 +119,13 @@ h2 {
   font-family: 'Permanent Marker', cursive;
 }
 
+.burgersIGottaEat {
+  text-align: left;
+}
+
+.burgersIDevoured {
+  text-align: right;
+}
 .form-group {
   padding-bottom: 60px;
   font-family: 'Bebas Neue', cursive;
