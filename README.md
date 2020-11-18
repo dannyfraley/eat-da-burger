@@ -1,7 +1,7 @@
 ![EATDABURGERscreenshot1](./public/assets/images/EATDABURGERscreenshot1.png)
 
 # Eat-Da-Burger
-Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Once a new burger has been entered, it will display on the list of `BURGERS I GOTTA EAT`. The user then can click the `DEVOUR` button, which will move the burger to the list of `BURGERS I DEVOURED`. This app uses the MVC design pattern, and uses Node, MySQL, Handlebars, Express, is deployed using Heroku, and includes an app logo created in Adobe Photoshop and Illustrator by Danny Fraley.
+Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Once a new burger has been entered, it will display on the list of `BURGERS I GOTTA EAT`. The user then can click the `DEVOUR` button, which will move the burger to the list of `BURGERS I DEVOURED`. This app uses the MVC design pattern, and uses Node, MySQL, Handlebars, Express, Bootstrap, is deployed using Heroku, and includes an app logo created in Adobe Photoshop and Illustrator by Danny Fraley.
 
 ![License](https://img.shields.io/badge/LICENSE-MIT-red.svg)
 
