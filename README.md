@@ -31,13 +31,11 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 3. Any new burger that is added is then saved to the database and appears in the `BURGERS I GOTTA EAT` column.
 4. Once the name of the burger appears in the `BURGERS I GOTTA EAT` column, the user has the ability to click the `DEVOUR` button next to it, which relocates the burger name to the `BURGERS I DEVOURED` column.
 
-![EATDABURGERscreenshot1](.public/Assets/images/EATDABURGERscreenshot1.png)
+![EATDABURGERscreenshot2](./public/assets/images/EATDABURGERscreenshot2.png)
 
-![EATDABURGERscreenshot2](.public/Assets/images/EATDABURGERscreenshot2.png)
+![EATDABURGERscreenshot3](./public/assets/images/EATDABURGERscreenshot3.png)
 
-![EATDABURGERscreenshot3](.public/Assets/images/EATDABURGERscreenshot3.png)
-
-![EATDABURGERscreenshot4](.public/Assets/images/EATDABURGERscreenshot4.png)
+![EATDABURGERscreenshot4](./public/assets/images/EATDABURGERscreenshot4.png)
 
 
 
