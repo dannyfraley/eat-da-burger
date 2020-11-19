@@ -74,3 +74,6 @@ For question about using this application, please contact me at one of the links
 <a href='https://www.github.com/dannyfraley'>github.com/dannyfraley</a>
 
 <a href='mailto:dannyfraley@gmail.com'>dannyfraley@gmail.com</a>
+
+## Updated Portfolio
+An updated portfolio including a link to this app can be found at https://dannyfraley.github.io/portfolio/
